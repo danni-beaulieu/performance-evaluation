@@ -3,6 +3,11 @@ http://ec2-44-202-59-171.compute-1.amazonaws.com:3456/client.html
 
 ## 1 ##
 
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 1000 -c 100 -g out_node_client_1.dat http://ec2-44-202-59-171.compute-1.amazonaws.com:3456/client.html 
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
 Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
 Completed 100 requests
 Completed 200 requests
@@ -24,104 +29,55 @@ Server Port:            3456
 Document Path:          /client.html
 Document Length:        757 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.667 seconds
+Concurrency Level:      100
+Time taken for tests:   0.453 seconds
 Complete requests:      1000
 Failed requests:        0
 Total transferred:      832000 bytes
 HTML transferred:       757000 bytes
-Requests per second:    1498.41 [#/sec] (mean)
-Time per request:       6.674 [ms] (mean)
-Time per request:       0.667 [ms] (mean, across all concurrent requests)
-Transfer rate:          1217.46 [Kbytes/sec] received
+Requests per second:    2209.24 [#/sec] (mean)
+Time per request:       45.265 [ms] (mean)
+Time per request:       0.453 [ms] (mean, across all concurrent requests)
+Transfer rate:          1795.00 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    2   2.2      1       8
-Processing:     2    5   2.3      4      16
-Waiting:        1    4   2.0      3      13
-Total:          2    7   3.5      5      23
+Connect:        1    6   2.3      7      10
+Processing:     6   38  14.9     39      61
+Waiting:        1   29  11.8     30      52
+Total:          6   44  15.3     45      68
 
 Percentage of the requests served within a certain time (ms)
-  50%      5
-  66%      6
-  75%      8
-  80%      9
-  90%     12
-  95%     13
-  98%     15
-  99%     22
- 100%     23 (longest request)
+  50%     45
+  66%     52
+  75%     55
+  80%     58
+  90%     67
+  95%     68
+  98%     68
+  99%     68
+ 100%     68 (longest request)
 
 
  ## 2 ##
-
- Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
-Completed 100 requests
-Completed 200 requests
-Completed 300 requests
-Completed 400 requests
-Completed 500 requests
-Completed 600 requests
-Completed 700 requests
-Completed 800 requests
-Completed 900 requests
-Completed 1000 requests
-Finished 1000 requests
-
-
-Server Software:        
-Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
-Server Port:            3456
-
-Document Path:          /client.html
-Document Length:        757 bytes
-
-Concurrency Level:      10
-Time taken for tests:   0.669 seconds
-Complete requests:      1000
-Failed requests:        0
-Total transferred:      832000 bytes
-HTML transferred:       757000 bytes
-Requests per second:    1493.90 [#/sec] (mean)
-Time per request:       6.694 [ms] (mean)
-Time per request:       0.669 [ms] (mean, across all concurrent requests)
-Transfer rate:          1213.80 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0    2   2.2      1       8
-Processing:     2    5   2.1      4      13
-Waiting:        1    4   1.9      3      11
-Total:          2    7   3.1      5      18
-
-Percentage of the requests served within a certain time (ms)
-  50%      5
-  66%      6
-  75%      8
-  80%      9
-  90%     11
-  95%     12
-  98%     16
-  99%     17
- 100%     18 (longest request)
-
-
- ## 3 ## 
-
+ 
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 10000 -c 1000 -g out_node_client_2.dat http://ec2-44-202-59-171.compute-1.amazonaws.com:3456/client.html 
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
-Completed 100 requests
-Completed 200 requests
-Completed 300 requests
-Completed 400 requests
-Completed 500 requests
-Completed 600 requests
-Completed 700 requests
-Completed 800 requests
-Completed 900 requests
 Completed 1000 requests
-Finished 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
 
 
 Server Software:        
@@ -131,31 +87,31 @@ Server Port:            3456
 Document Path:          /client.html
 Document Length:        757 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.750 seconds
-Complete requests:      1000
+Concurrency Level:      1000
+Time taken for tests:   2.902 seconds
+Complete requests:      10000
 Failed requests:        0
-Total transferred:      832000 bytes
-HTML transferred:       757000 bytes
-Requests per second:    1333.95 [#/sec] (mean)
-Time per request:       7.497 [ms] (mean)
-Time per request:       0.750 [ms] (mean, across all concurrent requests)
-Transfer rate:          1083.84 [Kbytes/sec] received
+Total transferred:      8320000 bytes
+HTML transferred:       7570000 bytes
+Requests per second:    3446.41 [#/sec] (mean)
+Time per request:       290.157 [ms] (mean)
+Time per request:       0.290 [ms] (mean, across all concurrent requests)
+Transfer rate:          2800.21 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        1    2   2.7      1       9
-Processing:     1    5   3.0      3      18
-Waiting:        1    4   2.9      3      17
-Total:          2    7   4.0      6      18
+Connect:        1   27  46.8     23    1059
+Processing:    33  257  62.9    235     542
+Waiting:        1  199  46.4    189     473
+Total:         34  283  79.6    259    1289
 
 Percentage of the requests served within a certain time (ms)
-  50%      6
-  66%      9
-  75%     11
-  80%     11
-  90%     14
-  95%     16
-  98%     17
-  99%     17
- 100%     18 (longest request)
+  50%    259
+  66%    268
+  75%    278
+  80%    344
+  90%    409
+  95%    431
+  98%    439
+  99%    440
+ 100%   1289 (longest request)

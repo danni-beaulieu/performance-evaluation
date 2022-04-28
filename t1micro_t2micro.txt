@@ -1,16 +1,16 @@
 ## T1 Micro ##
 
-http://ec2-3-84-225-124.compute-1.amazonaws.com/~ec2-user/college.html 
+http://ec2-3-84-225-124.compute-1.amazonaws.com/~ec2-user/college.html  
 
-top - 05:20:14 up  5:26,  1 user,  load average: 0.00, 0.00, 0.00
-Tasks:  99 total,   1 running,  57 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-KiB Mem :   575028 total,   214940 free,   131656 used,   228432 buff/cache
-KiB Swap:        0 total,        0 free,        0 used.   339464 avail Mem 
+top - 18:41:50 up 18:47,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 102 total,   1 running,  60 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.3 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :   575028 total,   370280 free,   103120 used,   101628 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   379668 avail Mem 
 
   PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                            
-23655 ec2-user  20   0  168828   4280   3772 R  0.3  0.7   0:00.02 top                                                                                
-    1 root      20   0  189160   4912   3224 S  0.0  0.9   0:03.23 systemd                                                                            
+29155 ec2-user  20   0  168828   4296   3784 R  0.3  0.7   0:00.05 top                                                                                
+    1 root      20   0  189160   4548   2860 S  0.0  0.8   0:03.92 systemd                                                                            
     2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                                                           
     3 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_gp                                                                             
     4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_par_gp                                                                         
@@ -18,9 +18,9 @@ KiB Swap:        0 total,        0 free,        0 used.   339464 avail Mem
     8 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq                                                                       
     9 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_rude_                                                                    
    10 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_trace                                                                    
-   11 root      20   0       0      0      0 S  0.0  0.0   0:00.22 ksoftirqd/0                                                                        
-   12 root      20   0       0      0      0 I  0.0  0.0   0:00.24 rcu_sched                                                                          
-   13 root      rt   0       0      0      0 S  0.0  0.0   0:00.07 migration/0                                                                        
+   11 root      20   0       0      0      0 S  0.0  0.0   0:04.42 ksoftirqd/0                                                                        
+   12 root      20   0       0      0      0 I  0.0  0.0   0:00.39 rcu_sched                                                                          
+   13 root      rt   0       0      0      0 S  0.0  0.0   0:00.26 migration/0                                                                        
    15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 cpuhp/0                                                                            
    17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                          
    18 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns    
@@ -28,26 +28,26 @@ KiB Swap:        0 total,        0 free,        0 used.   339464 avail Mem
 [ec2-user@ip-172-31-23-32 ~]$ vmstat 1 5
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 0  0      0 215560      0 228432    0    0    42    66   45  134  1  0 99  0  0
- 0  0      0 215560      0 228464    0    0     0     0   56  147  0  0 100  0  0
- 0  0      0 215560      0 228464    0    0     0     0   51  146  0  0 100  0  0
- 0  0      0 215560      0 228464    0    0     0     0   47  142  0  0 100  0  0
- 0  0      0 215560      0 228464    0    0     0     0   49  140  0  0 100  0  0
+ 0  0      0 370900      0 101628    0    0    12    21   40  150  0  0 100  0  0
+ 0  0      0 370900      0 101656    0    0     0     0   45  167  0  0 100  0  0
+ 0  0      0 370900      0 101656    0    0     0     0   38  161  0  0 100  0  0
+ 0  0      0 370900      0 101656    0    0     0    16   41  164  0  0 100  0  0
+ 0  0      0 370900      0 101656    0    0     0     0   31  132  0  0 100  0  0
 
 
 ## T2 Micro ##
 
 http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/college.html 
 
-top - 00:19:01 up 91 days, 12:07,  1 user,  load average: 0.01, 0.00, 0.00
-Tasks: 128 total,   1 running,  86 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.3 st
-KiB Mem :   988696 total,   128988 free,   551716 used,   307992 buff/cache
-KiB Swap:        0 total,        0 free,        0 used.   296120 avail Mem 
+top - 13:41:17 up 92 days,  1:29,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 129 total,   1 running,  86 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.7 us,  0.3 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :   988696 total,   178352 free,   637196 used,   173148 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   193472 avail Mem 
 
   PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                 
-21598 bdanni    20   0  171012   4476   3800 R  0.3  0.5   0:00.06 top                                                                     
-    1 root      20   0  191332   3864   2068 S  0.0  0.4  19:01.43 systemd                                                                 
+ 1759 bdanni    20   0  171016   4428   3748 R  0.7  0.4   0:00.02 top                                                                     
+    1 root      20   0  191332   4408   2612 S  0.0  0.4  19:09.09 systemd                                                                 
     2 root      20   0       0      0      0 S  0.0  0.0   0:00.44 kthreadd                                                                
     3 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_gp                                                                  
     4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_par_gp                                                              
@@ -55,39 +55,39 @@ KiB Swap:        0 total,        0 free,        0 used.   296120 avail Mem
     9 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq                                                            
    10 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_rude_                                                         
    11 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_trace                                                         
-   12 root      20   0       0      0      0 S  0.0  0.0   0:14.85 ksoftirqd/0                                                             
-   13 root      20   0       0      0      0 I  0.0  0.0   1:14.96 rcu_sched                                                               
-   14 root      rt   0       0      0      0 S  0.0  0.0   0:34.67 migration/0                                                             
+   12 root      20   0       0      0      0 S  0.0  0.0   0:17.78 ksoftirqd/0                                                             
+   13 root      20   0       0      0      0 I  0.0  0.0   1:15.55 rcu_sched                                                               
+   14 root      rt   0       0      0      0 S  0.0  0.0   0:34.88 migration/0                                                             
    15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 cpuhp/0                                                                 
    17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                               
    18 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns                                                                   
-   21 root      20   0       0      0      0 S  0.0  0.0   0:06.85 kauditd                                                                 
-  260 root      20   0       0      0      0 S  0.0  0.0   0:02.71 khungtaskd                                                              
+   21 root      20   0       0      0      0 S  0.0  0.0   0:06.91 kauditd                                                                 
+  260 root      20   0       0      0      0 S  0.0  0.0   0:02.73 khungtaskd                                                              
   261 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper                                                              
   262 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback                                                               
-  264 root      20   0       0      0      0 S  0.0  0.0   3:24.57 kcompactd0 
+  264 root      20   0       0      0      0 S  0.0  0.0   3:26.69 kcompactd0   
 
-[bdanni@ip-172-31-80-4 static]$ vmstat 1 5
+[bdanni@ip-172-31-80-4 ~]$ vmstat 1 5
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 0  0      0 129332      0 308016    0    0     1     8    2    0  0  0 100  0  0
- 0  0      0 129332      0 308016    0    0     0     0   53  185  0  0 100  0  0
- 0  0      0 129332      0 308016    0    0     0     0   37  166  0  0 100  0  0
- 0  0      0 129332      0 308016    0    0     0     0   42  179  0  0 100  0  0
- 0  0      0 129332      0 308016    0    0     0     0   41  171  0  0 100  0  0
+ 0  0      0 178900      0 173148    0    0     1     8    3    2  0  0 100  0  0
+ 0  0      0 178900      0 173180    0    0     0     0   65  211  0  0 100  0  0
+ 0  0      0 178900      0 173180    0    0     0     0   58  208  0  0 100  0  0
+ 0  0      0 178900      0 173180    0    0     0     0   59  211  0  0 100  0  0
+ 0  0      0 178900      0 173180    0    0     0     0   52  198  0  0 100  0  0
 
 
 ## AB Testing Only T1 Micro (ec2-34-207-242-230.compute-1.amazonaws.com) ##
 
-top - 05:21:49 up 10 min,  1 user,  load average: 0.00, 0.11, 0.10
-Tasks:  98 total,   1 running,  56 sleeping,   0 stopped,   0 zombie
+top - 18:43:09 up 13:31,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  99 total,   1 running,  57 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-KiB Mem :   575028 total,   197148 free,   113544 used,   264336 buff/cache
-KiB Swap:        0 total,        0 free,        0 used.   363528 avail Mem 
+KiB Mem :   575028 total,   215596 free,   129160 used,   230272 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   342836 avail Mem 
 
   PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                    
-21091 ec2-user  20   0  168840   4312   3776 R  0.3  0.7   0:00.01 top                                                        
-    1 root      20   0  189288   4516   2784 S  0.0  0.8   0:02.15 systemd                                                    
+26640 ec2-user  20   0  168840   4316   3784 R  0.3  0.8   0:00.01 top                                                        
+    1 root      20   0  189288   4228   2496 S  0.0  0.7   0:02.96 systemd                                                    
     2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                                   
     3 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_gp                                                     
     4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 rcu_par_gp                                                 
@@ -95,36 +95,40 @@ KiB Swap:        0 total,        0 free,        0 used.   363528 avail Mem
     8 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq                                               
     9 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_rude_                                            
    10 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_trace                                            
-   11 root      20   0       0      0      0 S  0.0  0.0   0:00.11 ksoftirqd/0                                                
-   12 root      20   0       0      0      0 I  0.0  0.0   0:00.13 rcu_sched                                                  
-   13 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                
+   11 root      20   0       0      0      0 S  0.0  0.0   0:01.62 ksoftirqd/0                                                
+   12 root      20   0       0      0      0 I  0.0  0.0   0:00.36 rcu_sched                                                  
+   13 root      rt   0       0      0      0 S  0.0  0.0   0:00.18 migration/0                                                
    15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 cpuhp/0                                                    
    17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                  
    18 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns                                                      
-   21 root      20   0       0      0      0 S  0.0  0.0   0:00.01 kauditd                                                    
-  261 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd                                                 
+   21 root      20   0       0      0      0 S  0.0  0.0   0:00.07 kauditd                                                    
+  261 root      20   0       0      0      0 S  0.0  0.0   0:00.01 khungtaskd                                                 
   262 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper                                                 
   263 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback                                                  
-  265 root      20   0       0      0      0 S  0.0  0.0   0:00.04 kcompactd0                                                 
+  265 root      20   0       0      0      0 S  0.0  0.0   0:01.16 kcompactd0                                                 
   266 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                       
   267 root      39  19       0      0      0 S  0.0  0.0   0:00.00 khugepaged                                                 
   322 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kintegrityd                                                
   324 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kblockd                                                    
   325 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 blkcg_punt_bio                                             
-  660 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xen-balloon         
+  660 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xen-balloon            
 
 [ec2-user@ip-172-31-19-192 ~]$ vmstat 1 5
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 0  0      0 197272      0 264336    0    0  1136  1868  378  836 13  3 81  2  1
- 0  0      0 197272      0 264368    0    0     0     0   53  134  0  0 100  0  0
- 0  0      0 197272      0 264368    0    0     0     0   48  130  0  0 100  0  0
- 0  0      0 197272      0 264368    0    0     0     0   51  131  0  0 100  0  0
- 0  0      0 197272      0 264368    0    0     0     0   56  145  0  0 100  0  0    
+ 0  0      0 215720      0 230272    0    0    17    29   70  143  0  0 100  0  0
+ 0  0      0 215720      0 230300    0    0     0     0   31  103  0  0 100  0  0
+ 0  0      0 215720      0 230300    0    0     0     0   23  101  0  0 100  0  0
+ 0  0      0 215720      0 230300    0    0     0     0   23   97  0  0 100  0  0
+ 0  0      0 215720      0 230300    0    0     0     0   21   97  0  0 100  0  0 
 
  ## 1 - T1 ##
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 1000 -c 100 -g out_t1_1_college.dat http://ec2-3-84-225-124.compute-1.amazonaws.com/~ec2-user/college.html
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
 
- Benchmarking ec2-3-84-225-124.compute-1.amazonaws.com (be patient)
+Benchmarking ec2-3-84-225-124.compute-1.amazonaws.com (be patient)
 Completed 100 requests
 Completed 200 requests
 Completed 300 requests
@@ -145,38 +149,43 @@ Server Port:            80
 Document Path:          /~ec2-user/college.html
 Document Length:        459 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.457 seconds
+Concurrency Level:      100
+Time taken for tests:   0.437 seconds
 Complete requests:      1000
 Failed requests:        0
 Total transferred:      742000 bytes
 HTML transferred:       459000 bytes
-Requests per second:    2189.50 [#/sec] (mean)
-Time per request:       4.567 [ms] (mean)
-Time per request:       0.457 [ms] (mean, across all concurrent requests)
-Transfer rate:          1586.53 [Kbytes/sec] received
+Requests per second:    2289.59 [#/sec] (mean)
+Time per request:       43.676 [ms] (mean)
+Time per request:       0.437 [ms] (mean, across all concurrent requests)
+Transfer rate:          1659.06 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   1.6      0       8
-Processing:     1    3   2.0      3      16
-Waiting:        1    3   2.0      3      16
-Total:          1    4   2.7      3      17
+Connect:        0    2   2.7      1       9
+Processing:     3   40  10.5     39      60
+Waiting:        1   39  10.5     39      59
+Total:          5   42  10.3     40      64
 
 Percentage of the requests served within a certain time (ms)
-  50%      3
-  66%      3
-  75%      4
-  80%      5
-  90%      9
-  95%     10
-  98%     14
-  99%     16
- 100%     17 (longest request)
+  50%     40
+  66%     46
+  75%     51
+  80%     52
+  90%     56
+  95%     58
+  98%     59
+  99%     60
+ 100%     64 (longest request)
 
  ## 1 - T2 ##
 
- Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 1000 -c 100 -g out_t2_1_college.dat http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/college.html 
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
 Completed 100 requests
 Completed 200 requests
 Completed 300 requests
@@ -197,36 +206,41 @@ Server Port:            80
 Document Path:          /~bdanni/perfeval/college.html
 Document Length:        458 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.367 seconds
+Concurrency Level:      100
+Time taken for tests:   0.410 seconds
 Complete requests:      1000
 Failed requests:        0
 Total transferred:      741000 bytes
 HTML transferred:       458000 bytes
-Requests per second:    2726.54 [#/sec] (mean)
-Time per request:       3.668 [ms] (mean)
-Time per request:       0.367 [ms] (mean, across all concurrent requests)
-Transfer rate:          1973.01 [Kbytes/sec] received
+Requests per second:    2437.31 [#/sec] (mean)
+Time per request:       41.029 [ms] (mean)
+Time per request:       0.410 [ms] (mean, across all concurrent requests)
+Transfer rate:          1763.71 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   1.5      1       8
-Processing:     1    3   1.8      2      10
-Waiting:        1    3   1.7      2      10
-Total:          1    4   2.5      3      16
+Connect:        1    2   2.5      1      11
+Processing:     6   37  10.9     37      66
+Waiting:        1   37  10.9     37      66
+Total:          7   40  10.7     39      68
 
 Percentage of the requests served within a certain time (ms)
-  50%      3
-  66%      3
-  75%      3
-  80%      3
-  90%      7
-  95%      9
-  98%     13
-  99%     16
- 100%     16 (longest request)
+  50%     39
+  66%     42
+  75%     45
+  80%     47
+  90%     56
+  95%     59
+  98%     61
+  99%     65
+ 100%     68 (longest request)
 
  ## 2 - T1 ##
+
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 10000 -c 1000 -g out_t1_2_college.dat http://ec2-3-84-225-124.compute-1.amazonaws.com/~ec2-user/college.html
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking ec2-3-84-225-124.compute-1.amazonaws.com (be patient)
 Completed 1000 requests
@@ -249,38 +263,43 @@ Server Port:            80
 Document Path:          /~ec2-user/college.html
 Document Length:        459 bytes
 
-Concurrency Level:      100
-Time taken for tests:   4.482 seconds
+Concurrency Level:      1000
+Time taken for tests:   7.682 seconds
 Complete requests:      10000
 Failed requests:        0
 Total transferred:      7420000 bytes
 HTML transferred:       4590000 bytes
-Requests per second:    2231.13 [#/sec] (mean)
-Time per request:       44.820 [ms] (mean)
-Time per request:       0.448 [ms] (mean, across all concurrent requests)
-Transfer rate:          1616.70 [Kbytes/sec] received
+Requests per second:    1301.69 [#/sec] (mean)
+Time per request:       768.231 [ms] (mean)
+Time per request:       0.768 [ms] (mean, across all concurrent requests)
+Transfer rate:          943.22 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    2   2.7      1      13
-Processing:     3   42   9.1     41      78
-Waiting:        1   42   9.0     41      78
-Total:          5   45   8.8     43      78
+Connect:        0   34 169.5      1    1039
+Processing:    28  455 1194.4    221    7624
+Waiting:        1  455 1194.4    220    7624
+Total:         35  489 1204.8    224    7648
 
 Percentage of the requests served within a certain time (ms)
-  50%     43
-  66%     47
-  75%     50
-  80%     51
-  90%     56
-  95%     61
-  98%     68
-  99%     71
- 100%     78 (longest request)
+  50%    224
+  66%    238
+  75%    246
+  80%    257
+  90%    407
+  95%   1242
+  98%   7435
+  99%   7458
+ 100%   7648 (longest request)
 
  ## 2 - T2 ##
 
- Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 10000 -c 1000 -g out_t2_2_college.dat http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/college.html 
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
 Completed 1000 requests
 Completed 2000 requests
 Completed 3000 requests
@@ -301,136 +320,32 @@ Server Port:            80
 Document Path:          /~bdanni/perfeval/college.html
 Document Length:        458 bytes
 
-Concurrency Level:      100
-Time taken for tests:   3.510 seconds
+Concurrency Level:      1000
+Time taken for tests:   3.766 seconds
 Complete requests:      10000
 Failed requests:        0
 Total transferred:      7410000 bytes
 HTML transferred:       4580000 bytes
-Requests per second:    2848.84 [#/sec] (mean)
-Time per request:       35.102 [ms] (mean)
-Time per request:       0.351 [ms] (mean, across all concurrent requests)
-Transfer rate:          2061.51 [Kbytes/sec] received
+Requests per second:    2655.51 [#/sec] (mean)
+Time per request:       376.576 [ms] (mean)
+Time per request:       0.377 [ms] (mean, across all concurrent requests)
+Transfer rate:          1921.61 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    2   2.3      1      16
-Processing:     4   33   7.4     32      64
-Waiting:        1   33   7.4     32      64
-Total:          4   35   7.5     33      65
+Connect:        0   29 156.1      1    1040
+Processing:    33  306 595.0    184    3713
+Waiting:        1  306 595.0    183    3713
+Total:         33  335 616.7    186    3737
 
 Percentage of the requests served within a certain time (ms)
-  50%     33
-  66%     37
-  75%     40
-  80%     41
-  90%     45
-  95%     49
-  98%     53
-  99%     58
- 100%     65 (longest request)
-
- ## 3 - T1 ##
-
- Benchmarking ec2-3-84-225-124.compute-1.amazonaws.com (be patient)
-Completed 10000 requests
-Completed 20000 requests
-Completed 30000 requests
-Completed 40000 requests
-Completed 50000 requests
-Completed 60000 requests
-Completed 70000 requests
-Completed 80000 requests
-Completed 90000 requests
-Completed 100000 requests
-Finished 100000 requests
-
-
-Server Software:        Apache/2.4.53
-Server Hostname:        ec2-3-84-225-124.compute-1.amazonaws.com
-Server Port:            80
-
-Document Path:          /~ec2-user/college.html
-Document Length:        459 bytes
-
-Concurrency Level:      1000
-Time taken for tests:   32.288 seconds
-Complete requests:      100000
-Failed requests:        0
-Total transferred:      74200000 bytes
-HTML transferred:       45900000 bytes
-Requests per second:    3097.12 [#/sec] (mean)
-Time per request:       322.880 [ms] (mean)
-Time per request:       0.323 [ms] (mean, across all concurrent requests)
-Transfer rate:          2244.20 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0   78 164.5     75    7195
-Processing:    25  243 549.3    221   16196
-Waiting:        1  242 549.3    220   16196
-Total:         27  321 572.1    297   16235
-
-Percentage of the requests served within a certain time (ms)
-  50%    297
-  66%    302
-  75%    304
-  80%    306
-  90%    310
-  95%    346
-  98%   1163
-  99%   1302
- 100%  16235 (longest request)
-
- ## 3 - T2 ##
-
-Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
-Completed 10000 requests
-Completed 20000 requests
-Completed 30000 requests
-Completed 40000 requests
-Completed 50000 requests
-Completed 60000 requests
-Completed 70000 requests
-Completed 80000 requests
-Completed 90000 requests
-Completed 100000 requests
-Finished 100000 requests
-
-
-Server Software:        Apache/2.4.52
-Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
-Server Port:            80
-
-Document Path:          /~bdanni/perfeval/college.html
-Document Length:        458 bytes
-
-Concurrency Level:      1000
-Time taken for tests:   29.981 seconds
-Complete requests:      100000
-Failed requests:        0
-Total transferred:      74100000 bytes
-HTML transferred:       45800000 bytes
-Requests per second:    3335.42 [#/sec] (mean)
-Time per request:       299.812 [ms] (mean)
-Time per request:       0.300 [ms] (mean, across all concurrent requests)
-Transfer rate:          2413.62 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0   62 167.9     55    7217
-Processing:    29  235 1003.4    175   29928
-Waiting:        1  234 1003.3    174   29928
-Total:         33  297 1016.4    235   29953
-
-Percentage of the requests served within a certain time (ms)
-  50%    235
-  66%    244
-  75%    249
-  80%    252
-  90%    306
-  95%    427
-  98%   1166
-  99%   1220
- 100%  29953 (longest request)
+  50%    186
+  66%    194
+  75%    203
+  80%    209
+  90%    360
+  95%   1207
+  98%   3504
+  99%   3644
+ 100%   3737 (longest request)
 

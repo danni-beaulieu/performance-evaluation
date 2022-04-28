@@ -3,6 +3,11 @@ http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/something.php
 
 ## 1 ## 
 
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 1000 -c 100 -g out_php_something_1.dat http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/something.php
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
 Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
 Completed 100 requests
 Completed 200 requests
@@ -24,50 +29,55 @@ Server Port:            80
 Document Path:          /~bdanni/perfeval/something.php
 Document Length:        1881 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.702 seconds
+Concurrency Level:      100
+Time taken for tests:   0.705 seconds
 Complete requests:      1000
 Failed requests:        0
 Total transferred:      2074000 bytes
 HTML transferred:       1881000 bytes
-Requests per second:    1425.34 [#/sec] (mean)
-Time per request:       7.016 [ms] (mean)
-Time per request:       0.702 [ms] (mean, across all concurrent requests)
-Transfer rate:          2886.87 [Kbytes/sec] received
+Requests per second:    1418.76 [#/sec] (mean)
+Time per request:       70.484 [ms] (mean)
+Time per request:       0.705 [ms] (mean, across all concurrent requests)
+Transfer rate:          2873.53 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   1.9      1       8
-Processing:     1    6   2.0      5      13
-Waiting:        1    6   2.0      5      13
-Total:          2    7   2.5      6      16
+Connect:        0    2   2.1      1       8
+Processing:    13   60   9.9     61      88
+Waiting:       13   60   9.9     61      88
+Total:         17   61   9.3     63      89
 
 Percentage of the requests served within a certain time (ms)
-  50%      6
-  66%      6
-  75%      8
-  80%      8
-  90%     11
-  95%     12
-  98%     14
-  99%     16
- 100%     16 (longest request)
+  50%     63
+  66%     65
+  75%     66
+  80%     68
+  90%     69
+  95%     71
+  98%     72
+  99%     75
+ 100%     89 (longest request)
 
 
  ## 2 ##
 
- Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
-Completed 100 requests
-Completed 200 requests
-Completed 300 requests
-Completed 400 requests
-Completed 500 requests
-Completed 600 requests
-Completed 700 requests
-Completed 800 requests
-Completed 900 requests
+[ec2-user@ip-172-31-19-192 ~]$ ab -n 10000 -c 1000 -g out_php_something_2.dat http://ec2-44-202-59-171.compute-1.amazonaws.com/~bdanni/perfeval/something.php
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
 Completed 1000 requests
-Finished 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
 
 
 Server Software:        Apache/2.4.52
@@ -77,84 +87,31 @@ Server Port:            80
 Document Path:          /~bdanni/perfeval/something.php
 Document Length:        1881 bytes
 
-Concurrency Level:      10
-Time taken for tests:   0.695 seconds
-Complete requests:      1000
+Concurrency Level:      1000
+Time taken for tests:   7.931 seconds
+Complete requests:      10000
 Failed requests:        0
-Total transferred:      2074000 bytes
-HTML transferred:       1881000 bytes
-Requests per second:    1438.85 [#/sec] (mean)
-Time per request:       6.950 [ms] (mean)
-Time per request:       0.695 [ms] (mean, across all concurrent requests)
-Transfer rate:          2914.24 [Kbytes/sec] received
+Total transferred:      20740000 bytes
+HTML transferred:       18810000 bytes
+Requests per second:    1260.82 [#/sec] (mean)
+Time per request:       793.136 [ms] (mean)
+Time per request:       0.793 [ms] (mean, across all concurrent requests)
+Transfer rate:          2553.65 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   2.0      1       8
-Processing:     1    6   1.9      5      15
-Waiting:        1    5   1.8      5      15
-Total:          2    7   2.8      6      16
+Connect:        0   35 205.7      1    3048
+Processing:    21  581 1234.5    315    7144
+Waiting:        1  581 1233.9    315    7143
+Total:         48  617 1253.2    317    7678
 
 Percentage of the requests served within a certain time (ms)
-  50%      6
-  66%      6
-  75%      7
-  80%      8
-  90%     11
-  95%     14
-  98%     16
-  99%     16
- 100%     16 (longest request)
-
-
- ## 3 ##
-
- Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
-Completed 100 requests
-Completed 200 requests
-Completed 300 requests
-Completed 400 requests
-Completed 500 requests
-Completed 600 requests
-Completed 700 requests
-Completed 800 requests
-Completed 900 requests
-Completed 1000 requests
-Finished 1000 requests
-
-
-Server Software:        Apache/2.4.52
-Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
-Server Port:            80
-
-Document Path:          /~bdanni/perfeval/something.php
-Document Length:        1881 bytes
-
-Concurrency Level:      10
-Time taken for tests:   0.751 seconds
-Complete requests:      1000
-Failed requests:        0
-Total transferred:      2074000 bytes
-HTML transferred:       1881000 bytes
-Requests per second:    1331.93 [#/sec] (mean)
-Time per request:       7.508 [ms] (mean)
-Time per request:       0.751 [ms] (mean, across all concurrent requests)
-Transfer rate:          2697.68 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0    2   2.4      1       8
-Processing:     1    6   2.2      5      19
-Waiting:        1    6   2.2      5      19
-Total:          2    7   2.9      6      19
-
-Percentage of the requests served within a certain time (ms)
-  50%      6
-  66%      8
-  75%      9
-  80%     10
-  90%     12
-  95%     13
-  98%     16
-  99%     16
- 100%     19 (longest request)
+  50%    317
+  66%    328
+  75%    333
+  80%    337
+  90%    522
+  95%   1541
+  98%   6971
+  99%   7016
+ 100%   7678 (longest request)
