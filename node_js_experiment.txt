@@ -1,0 +1,161 @@
+http://ec2-44-202-59-171.compute-1.amazonaws.com:3456/client.html
+
+
+## 1 ##
+
+Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
+Server Port:            3456
+
+Document Path:          /client.html
+Document Length:        757 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.667 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      832000 bytes
+HTML transferred:       757000 bytes
+Requests per second:    1498.41 [#/sec] (mean)
+Time per request:       6.674 [ms] (mean)
+Time per request:       0.667 [ms] (mean, across all concurrent requests)
+Transfer rate:          1217.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   2.2      1       8
+Processing:     2    5   2.3      4      16
+Waiting:        1    4   2.0      3      13
+Total:          2    7   3.5      5      23
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      6
+  75%      8
+  80%      9
+  90%     12
+  95%     13
+  98%     15
+  99%     22
+ 100%     23 (longest request)
+
+
+ ## 2 ##
+
+ Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
+Server Port:            3456
+
+Document Path:          /client.html
+Document Length:        757 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.669 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      832000 bytes
+HTML transferred:       757000 bytes
+Requests per second:    1493.90 [#/sec] (mean)
+Time per request:       6.694 [ms] (mean)
+Time per request:       0.669 [ms] (mean, across all concurrent requests)
+Transfer rate:          1213.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   2.2      1       8
+Processing:     2    5   2.1      4      13
+Waiting:        1    4   1.9      3      11
+Total:          2    7   3.1      5      18
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      6
+  75%      8
+  80%      9
+  90%     11
+  95%     12
+  98%     16
+  99%     17
+ 100%     18 (longest request)
+
+
+ ## 3 ## 
+
+
+Benchmarking ec2-44-202-59-171.compute-1.amazonaws.com (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        ec2-44-202-59-171.compute-1.amazonaws.com
+Server Port:            3456
+
+Document Path:          /client.html
+Document Length:        757 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.750 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      832000 bytes
+HTML transferred:       757000 bytes
+Requests per second:    1333.95 [#/sec] (mean)
+Time per request:       7.497 [ms] (mean)
+Time per request:       0.750 [ms] (mean, across all concurrent requests)
+Transfer rate:          1083.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    2   2.7      1       9
+Processing:     1    5   3.0      3      18
+Waiting:        1    4   2.9      3      17
+Total:          2    7   4.0      6      18
+
+Percentage of the requests served within a certain time (ms)
+  50%      6
+  66%      9
+  75%     11
+  80%     11
+  90%     14
+  95%     16
+  98%     17
+  99%     17
+ 100%     18 (longest request)
